@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Cache-Control" content="max-age=7200" />
+    <title>登录</title>
+    <link rel="icon" href="http://image.liqunshop.com/static/b/images/favicon.ico?v=2017031302" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://image.liqunshop.com/static/b/images/favicon.ico?v=2017031302" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="http://image.liqunshop.com/static/b/css/common.css?v=20170306">
+    <link rel="stylesheet" type="text/css" href="http://image.liqunshop.com/static/b/css/login/login.css?v=20170307">
+
+</head>
+<body>
+    <iframe id="iframeHead" width="100%" height="100px" frameborder="0" scrolling="no" src="./common/Head1.html?t=123"></iframe>
+    <div class="container">
+        <div class="login-contain">
+            <div class="login" id="login">
+                <div class="login-tit">
+                    <h3>欢迎登录</h3><a href="./register.html">快速注册></a>
+                </div>
+                <div class="login-false">
+                    <img src="http://image.liqunshop.com/static/b/images/login/jinyong.png"><p>输入的密码和账户名不匹配，请重新输入</p>
+                </div>
+                <div class="login-form">
+                    <div class="form-group">
+                        <label for="account" class="login-label account-label"></label>
+                        <input type="text" id="account" placeholder="用户名/手机号">
+                        <span class="clear-btn"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="login-label password-label"></label>
+                        <input id="password" type="password" placeholder="密码" onkeydown="if (event.keyCode == 13) { $('#btn_login').trigger('click'); return false; }">
+                    </div>
+                    <div class="form-group imgbar">
+                        <input id="imgbar" type="text" onkeydown="if (event.keyCode == 13) { $('#btn_login').trigger('click'); return false; }">
+                        <img id="VerifyCode_img" src="">
+                        <span>看不清？<label onclick="$('#VerifyCode_img').click();">换一张</label></span>
+                    </div>
+                    <div class="form-group">
+                        <button id="btn_login" class="login-btn">登 录</button>
+                    </div>
+                    <div class="form-oth">
+                        <input id="autosign" type="checkbox">
+                        <label class="auto-label" for="autosign">自动登录</label>
+                        <a id="forgetPW" href="./findPW.html">忘记密码？</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-wrap">
+
+        </div>
+    </div>
+    <iframe id="iframefooter" width="100%" height="112px" frameborder="0" scrolling="no" src="./common/footer1.html?t=123"></iframe>
+
+    <script type="text/javascript" src="http://image.liqunshop.com/static/common/JS/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://image.liqunshop.com/static/common/JS/jquery.cookie-1.4.1.js"></script>
+    <script type="text/javascript" src="http://image.liqunshop.com/static/b/js/common/common.js?v=2017030705"></script>
+    <script type="text/javascript" src="http://image.liqunshop.com/static/b/js/login/login.js?v=2017030906"></script>
+</body>
+</html>

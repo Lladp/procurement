@@ -3,6 +3,7 @@ let gulp = require('gulp'),
     sass = require('gulp-sass'),
     cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename');
+    image = require('gulp-image');
 
 //二、发布任务
 function fnSass(){
@@ -10,12 +11,33 @@ function fnSass(){
         .pipe(sass())
         .pipe(cssnano())
         .pipe(rename({suffix:'.min'}))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist/css'));
 }
+
+function fnCopyIndex(){
+    return gulp.src('./src/index.html')
+    .pipe(gulp.dest('./dist'));
+}
+function fnCopy(){
+    return gulp.src('./src/html/*')
+    .pipe(gulp.dest('./dist/html'))
+}
+function fnImg(){
+    return gulp.src('./src/img/*')
+    .pipe(image())
+    .pipe(gulp.dest('./dist/img'));
+}
+
 //监听
 function fnWatch(){
     gulp.watch('./src/sass/*.scss',fnSass);
+    gulp.watch('./src/index/html',fnCopyIndex);
+    gulp.watch('./src/html/*.html',fnCopy);
+    gulp.watch('./src/img/*',fnImg)
 }
 //发布任务
+exports.img  = fnImg;
+exports.index = fnCopyIndex;
 exports.sass = fnSass;
+exports.html = fnCopy;
 exports.default = fnWatch;

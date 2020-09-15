@@ -1,0 +1,123 @@
+@import 'public';
+header{
+    width: 100%;
+    height: 106px;
+}
+.box-title{
+    width: 1200px;
+    height:106px;
+    margin:0 auto;
+}
+.box-title img{
+    margin-top:22px;
+}
+.box-left{
+    float:right;
+    span{
+        line-height: 106px;
+        font-size: 18px;
+        margin-left:42px;
+    }
+}
+.box{
+    width: 1200px;
+    height:82px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    span{
+        line-height:82px;
+        margin-left:150px;
+        font-size: 22px;
+        color:#666;
+    }
+}
+.box-z{
+    width:100%;
+    height:500px;
+}
+.box0{
+    width: 1200px;
+    height:500px;
+    margin: 0 auto;
+}
+.box1{
+    width: 544px;
+    height:440px;
+    margin: 0 auto;
+
+}
+.box2,.box3,.box4,.box5,.box6,.box7{
+    float:right;
+}
+.box2 input{
+    width: 404px;
+    height:40px;
+    margin-top:20px;
+}
+.box3 .input1{
+    width: 200;
+    height:40px;
+    margin-top:36px;
+}
+.box3 .input2{
+    width:100px;
+    height:40px;
+    margin-top:36px;
+}
+.box4 .input3{
+    width: 254px;
+    height:40px;
+    margin-top:36px;
+}
+.box4 .input4{
+    width:136px;
+    height:40px;
+    margin-top:36px;
+}
+.box5 input{
+    width:404px;
+    height:40px;
+    margin-top:36px;
+}
+#box6 {
+    float:left;
+    margin-left:136px;
+    margin-top:10px;
+}
+.box7 input{
+    width: 200px;
+    height:50px;
+    margin-top:40px;
+    margin-right:40px;
+    background:#e60012;
+    color:#ffffff;
+    font-size:18px;
+    border:none;
+}
+
+/* footer*/
+footer{
+    width:100%;
+}
+.footer-box{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+}
+.footer-box a{
+    border-left:1px solid rgb(153,153,153);
+    padding-left:14px;
+    padding-right:14px;
+    font-size:14px;
+    color:rgb(153,153,153);
+}
+.footer-box a:first-child{
+    border:none;
+}
+.box-0 p{
+    font-size:12px;
+    color:rgb(153,153,153);
+    text-align: center;
+    margin-top:18px;
+}

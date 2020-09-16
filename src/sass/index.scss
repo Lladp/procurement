@@ -174,6 +174,7 @@ header{
    border-bottom:2px solid #4178c4;
    background:#4a6ecc;
    position:relative;
+   z-index: 100;
 }
 .store{
     position:absolute;
@@ -208,10 +209,76 @@ header{
 }
 
 
- .ts-title img{
-  width:740px;
-  height:362px;
+/*lb*/
+.banner{
+  width: 740px;
+  height: 362px;
+  margin: 0 auto;
+  border:1px solid #808080;
+  position: relative;
+  overflow: hidden;
 }
+.banner ul{
+  width: 6600px;
+  height: 362px;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.banner ul li{
+  float: left;
+}
+.banner ul img {
+  width: 740px;
+  height: 362px;
+  margin-left: -10px;
+  margin:0 auto;
+  display: block;
+}
+.banner ol{
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+  font-size: 0px;
+}
+.banner ol li{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #888;
+  display: inline-block;
+  margin: 0 3px;
+}
+.banner ol li.on{
+  background-color: #ff6a00;
+}
+.banner .btn{
+  width: 30px;
+  height: 50px;
+  background-color: #808080;
+  opacity: .2;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  color: #fff;
+  font-family: '宋体';
+}
+.banner .btn:hover{
+  opacity: .5;
+}
+.banner .btn_l{
+  left: 0;
+}
+.banner .btn_r{
+  right: 0;
+}
+/*end*/
 .ts-zj{
   width: 740px;
   height:408px;

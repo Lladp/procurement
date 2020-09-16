@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>利群采购平台</title>
     <link rel="stylesheet" href="../dist/css/index.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
                     <a href="./html/registration.html"><span>快速注册</span> </a>
               </div>
               <div class='head-section-R'>
-                    <span>客户服务</span>&nbsp;&nbsp;
+                    <a href="./html/login.html"><span>客户服务</span>&nbsp;&nbsp;</a>
                     <span>服务热线：400-6888-688</span>
               </div>
           </div>   
@@ -28,8 +28,8 @@
             <a href="http://cg.liqunshop.com/"><img src="./img/sylogo.png"></a>
             <div class='logo-segment-z'>
                <div><input type="text" id='ssk'><input type="button" value='搜索' id='ss'></div>
-                <span>热门搜索：<a href="">猪肉</a>&nbsp;&nbsp;<a href="">大米</a>&nbsp;&nbsp;<a href="">饮料</a>&nbsp;&nbsp;<a href="">海天</a>&nbsp;&nbsp;
-                <a href="">康师傅</a>&nbsp;&nbsp;<a href="">乐事</a></span>
+                <span>热门搜索：<a href="http://cg.liqunshop.com/Product/Search?classID=CL170521000645&orderKey=DEFAULT&orderBy=DESC&minPrice=0&maxPrice=0&pageIndex=1">猪肉</a>&nbsp;&nbsp;<a href="http://cg.liqunshop.com/product/search?displayclassid=CG170607000061">大米</a>&nbsp;&nbsp;<a href="http://cg.liqunshop.com/product/search?displayclassid=CG170607000053">饮料</a>&nbsp;&nbsp;<a href="http://cg.liqunshop.com/Product/Search?keyWord=%E6%B5%B7%E5%A4%A9&orderKey=DEFAULT&orderBy=DESC&minPrice=0&maxPrice=0&pageIndex=1">海天</a>&nbsp;&nbsp;
+                <a href="http://cg.liqunshop.com/Product/Search?keyWord=%E5%BA%B7%E5%B8%88%E5%82%85&brandID=BR170428002038&orderKey=DEFAULT&orderBy=DESC&minPrice=0&maxPrice=0&pageIndex=1">康师傅</a>&nbsp;&nbsp;<a href="http://cg.liqunshop.com/Product/Search?keyWord=%E4%B9%90%E4%BA%8B&brandID=BR170428003575&orderKey=DEFAULT&orderBy=DESC&minPrice=0&maxPrice=0&pageIndex=1">乐事</a></span>
             </div>
             <div class='logo-segment-r'>
                 <a href="./html/shopping.html">
@@ -231,7 +231,10 @@
                         <span>日用百货</span>
                         <span>宝宝护肤</span>
                         <span>酒水饮料</span>
-                        <img src="img/sylb.png" alt="">
+                        <div class="banner">
+                            <img src="img/sylb.png" alt="">
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -245,8 +248,8 @@
                     <div class="ts-wz">
                         <span >Hi,你好</span>
                     </div>
-                    <a href="login.html"><input type="button" value="登录" id='go'></a>
-                    <a href="registration.html"><input type="button" value="快速注册" id='goto'></a>
+                    <a href="./html/login.html"><input type="button" value="登录" id='go'></a>
+                    <a href="./registration.html"><input type="button" value="快速注册" id='goto'></a>
                 </div>
                 <div class="ts-gg">
                     <h3>公告</h3>
@@ -279,7 +282,11 @@
 <!-- time-limit -->
     <div class="time-limit">
         <div class="tl-tp">
-            <img src="./img/xsqg.jpg" alt="">
+            <span>本场还剩</span>
+            <!-- <span id="day_show">0天</span> -->
+            <strong id="hour_show">12时</strong>
+            <strong id="minute_show">44分</strong>
+            <strong id="second_show">0秒</strong>
         </div>
     </div>
 
@@ -392,5 +399,10 @@
             </div>
     </div>
 </footer>
+
+<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="../dist/js/jquery.top.min.js"></script>
+<script src="../dist/js/top-text.min.js"></script>
+<script src="../dist/js/time.limit.min.js"></script>
 </body>
 </html>
